@@ -63,8 +63,21 @@ img {
 
 /* site nav */
 
-.page-header{
+.page-header {
   border-bottom: 1px solid #ececec;
+}
+
+.background {
+  margin-right: 0;
+  margin-left: 0;
+  margin: auto;
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/team-banner.jpg);
 }
 
 .main-nav {
@@ -79,7 +92,6 @@ img {
 
 .side-nav .nav-list + .nav-list {
   margin-left: 50px;
-  
 }
 
 .side-nav .link {
@@ -91,8 +103,8 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .side-nav .link.current {
@@ -109,6 +121,7 @@ img {
 .login-nav {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 
 .login-nav .item + .item {
@@ -132,7 +145,16 @@ img {
 /* HERO */
 
 .background {
-  background-color: var(--banner-color);
+  margin-right: 0;
+  margin-left: 0;
+  margin: auto;
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/team-banner.jpg);
 }
 
 .hero {
@@ -157,6 +179,31 @@ img {
 }
 
 /* advantages */
+
+.item-adv-list::before {
+  content: '';
+  display: flex;
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-image: url(../images/antenna.png);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item-adv-list.diagram::before {
+  background-image: url(../images/diagram.png);
+}
+
+.item-adv-list.time::before {
+  background-image: url(../images/clock.png);
+}
+
+.item-adv-list.cosmos::before {
+  background-image: url(../images/astronaut.png);
+}
 
 .advatages-list {
   display: flex;
@@ -224,7 +271,7 @@ img {
 
 .team {
   background-color: var(--secondary-banner-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 
 .team .team-item {
@@ -326,7 +373,6 @@ img {
   line-height: 1.71;
 }
 
-
 .footer-title .footer-list + .footer-list {
   margin-top: 9px;
 }
@@ -352,8 +398,8 @@ img {
 /* image section */
 
 .card {
-  border: 1px solid #EEEEEE;
-  padding:24px 20px;
+  border: 1px solid #eeeeee;
+  padding: 24px 20px;
   border-top: 0;
 }
 
@@ -372,13 +418,16 @@ img {
 
   font-size: 16px;
   line-height: 1.88;
-
 }
 
 .image-list {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
+}
+
+.master-soc-item {
+  display: flex;
 }
 
 .image-list .flex-item {
@@ -441,7 +490,8 @@ img {
   border: 0;
 }
 
-.primary:hover {
+.primary:hover,
+.primary:focus {
   background-color: #188ce8;
   cursor: pointer;
 }
@@ -450,4 +500,24 @@ img {
   background-color: var(--accent-color);
   color: #ffffff;
   cursor: pointer;
+}
+
+.icon {
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+}
+
+.login-nav > .item {
+  display: flex;
+  align-items: center;
+}
+
+.icon:hover,
+.icon:focus {
+  fill: var(--accent-color);
+}
+
+.login-nav .link {
+  padding-top: 22px;
+  padding-bottom: 22px;
 }

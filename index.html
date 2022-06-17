@@ -16,38 +16,51 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>goit-markup-hw-03</title>
+    <title>goit-markup-hw-04</title>
   </head>
 
   <body>
-      <!-- HEADER-->
-      <header class="page-header">
-        <div class="container main-nav">
-          <nav class="main-nav">
-            <a href="./" class="logo">
-              <!-- <img src="./images/WebStudio.svg" alt="логотип"> -->
-              Web<span class="logo-color">Studio</span>
-            </a>
-      
-            <ul class="side-nav">
-              <li class="nav-list"><a class="link current" href="./">Студия</a></li>
-              <li class="nav-list">
-                <a class="link" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="nav-list
-                  "><a class="link" href="">Контакты</a></li>
-            </ul>
-          </nav>
-          <ul class="login-nav">
-            <li class="item">
-              <a class="link mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+    <!-- HEADER-->
+    <header class="page-header">
+      <div class="container main-nav">
+        <nav class="main-nav">
+          <a href="./" class="logo">
+            <!-- <img src="./images/WebStudio.svg" alt="логотип"> -->
+            Web<span class="logo-color">Studio</span>
+          </a>
+
+          <ul class="side-nav">
+            <li class="nav-list">
+              <a class="link current" href="./">Студия</a>
             </li>
-            <li class="item">
-              <a class="link mail" href="tel:+380961111111">+38 096 111 11 11</a>
+            <li class="nav-list">
+              <a class="link" href="./portfolio.html">Портфолио</a>
             </li>
+            <li class="nav-list"><a class="link" href="">Контакты</a></li>
           </ul>
-        </div>
-      </header>
+        </nav>
+        <ul class="login-nav">
+          <li class="item login">
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg width="20" height="16" class="icon mail">
+                <use href="./images/icons.svg#envelope-hover"></use>
+              </svg>
+            </a>
+            <a class="link mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="item login">
+            <a href="tel:+380961111111" class="link">
+              <svg class="icon phone" width="10" height="16" class="icon-mail">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+            </a>
+            <a class="link mail" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <!-- MAIN SECTION-->
 
     <main>
@@ -62,30 +75,31 @@
 
       <!-- ADVANTAGES SECTION-->
       <section class="advantages section">
+        <h2 hidden>Преемущества</h2>
         <div class="container">
           <ul class="advatages-list">
-            <li class="item">
+            <li class="item-adv-list">
               <h3 class="advantages-title">Внимание к деталям</h3>
               <p class="advantages-par">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="item">
+            <li class="item-adv-list time">
               <h3 class="advantages-title">Пунктуальность</h3>
               <p class="advantages-par">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="item">
+            <li class="item-adv-list diagram">
               <h3 class="advantages-title">Планирование</h3>
               <p class="advantages-par">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="item">
+            <li class="item-adv-list cosmos">
               <h3 class="advantages-title">Современные технологии</h3>
               <p class="advantages-par">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -174,30 +188,53 @@
       </section>
     </main>
 
+    <section class="clients section">
+      <div class="container">
+        <h2 class="section-title">Постоянные клиенты</h2>
+        <ul>
+          <li>
+            <a class="clients-link" href=""
+              ><svg width="106" height="60" class="clients-logo">
+                <use href="images/icons.svg#logo"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <!-- adress section-->
 
-  
-      <footer class="footer">
-        <div class="container">
-          <a class="footer-logo" href="/">
+    <footer class="footer">
+      <div class="container">
+        <a class="footer-logo" href="/">
           Web<span class="footer-color">Studio</span>
           <!-- <img src="./images/WebStudio.svg" alt="logo"> -->
         </a>
         <address>
           <ul class="footer-title">
             <li class="footer-list">
-              <a class="link" href="https://goo.gl/maps/xrUxvXRaoUCYZm5W7" target="_blank" rel="noopener noreferrer">
-                г. Киев, пр-т Леси Украинки, 26</a>
+              <a
+                class="link"
+                href="https://goo.gl/maps/xrUxvXRaoUCYZm5W7"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                г. Киев, пр-т Леси Украинки, 26</a
+              >v
             </li>
             <li class="footer-list">
-              <a class="link mail-footer" href="mailto:info@example.com">info@example.com</a>
+              <a class="link mail-footer" href="mailto:info@example.com"
+                >info@example.com</a
+              >
             </li>
             <li class="footer-list">
-              <a class="link mail-footer" href="tel:+380991111111">+38 099 111 11 11</a>
+              <a class="link mail-footer" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
             </li>
           </ul>
         </address>
       </div>
-      </footer>
+    </footer>
   </body>
 </html>
